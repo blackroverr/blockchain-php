@@ -6,8 +6,8 @@ $Input = new Input();
 $bc = new Blockchain();
 // echo "Username:" . $username;
 
-$username = $Input->getInput("Enter Data");
-$bc->addBlock($username);
+$data = $Input->getInput("Enter Data");
+$bc->addBlock($data);
 
 $bc->printBlockchain();
 
