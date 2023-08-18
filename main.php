@@ -2,9 +2,15 @@
 
 include('blockchain.php');
 
+$Input = new Input();
 $bc = new Blockchain();
+// echo "Username:" . $username;
 
-// $bc->addBlock('This is block1');
-// $bc->addBlock('This is block2');
+$username = $Input->getInput("Enter Data");
+$bc->addBlock($username);
 
 $bc->printBlockchain();
+
+
+
+

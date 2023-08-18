@@ -55,10 +55,18 @@ class Blockchain
 
 			printf("PrevHash: %s\n", $block->prevHash);
 			printf("Hash: %s\n", $block->hash);
+			printf("Time: %s\n", $block->timeStamp);
 			printf("Data: %s\n", $block->data);
 			printf("Nonce: %s\n\n\n", $block->nonce);
 
 			$lastHash = $block->prevHash;
 		}
+	}
+}
+
+class Input{
+	public function getInput($prompt){
+		echo $prompt . ":";
+		return trim(fgets(STDIN));
 	}
 }
