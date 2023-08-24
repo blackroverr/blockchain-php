@@ -90,8 +90,8 @@ class CuteDB
 			fclose($this->_datfile);
 		}
 
-		$idxFileName = sprintf('%s.idx', $dbname);
-		$datFileName = sprintf('%s.dat', $dbname);
+		$idxFileName = sprintf('db.idx', $dbname);
+		$datFileName = sprintf('db.dat', $dbname);
 
 		$init = false;
 
